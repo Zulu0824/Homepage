@@ -7,15 +7,13 @@
   --text-muted: #5b6270;
   --border: #e2e5ea;
   --accent: #3b5bdb;
-  --footer-bg: #087796; /* white text on this passes WCAG AA (about 5.1:1) */
+  --footer-bg: #087796;
   --radius: 14px;
   --shadow-sm: 0 1px 2px rgb(16 24 40 / 0.06), 0 1px 3px rgb(16 24 40 / 0.1);
   --shadow-md: 0 10px 24px rgb(16 24 40 / 0.12);
   --font:
     system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 }
-
-/* ---------- Reset + base ---------- */
 
 * {
   box-sizing: border-box;
@@ -65,7 +63,6 @@ header {
   width: auto;
 }
 
-/* dark fade so the white name stays readable on any photo */
 #image-container::after {
   content: "";
   position: absolute;
@@ -210,14 +207,13 @@ article img {
   gap: 0.25rem;
 }
 
-/* works whether the titles are h2 or h3 */
 .project-title-nav :is(h2, h3) {
   font-size: 1.15rem;
   line-height: 1.3;
 }
 
 .project-title-nav a {
-  padding: 0.625rem; /* 1.5rem icon + padding = 44px touch target */
+  padding: 0.625rem;
 }
 
 .project-title-nav img {
@@ -299,7 +295,7 @@ footer a:focus-visible {
 #footer-nav {
   display: flex;
   gap: 0.5rem;
-  margin-left: -0.25rem; /* lines the first icon up with the text above */
+  margin-left: -0.25rem;
 }
 
 #footer-nav a {
