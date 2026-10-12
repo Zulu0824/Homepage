@@ -16,13 +16,12 @@ header {
   width: min(1000px, 100%);
   justify-self: center;
   gap: 15px;
-  background-color: lightblue;
 }
 
 #image-container {
   width: fit-content;
   height: fit-content;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: relative;
 }
 
@@ -88,6 +87,38 @@ header {
 
 /* main */
 
+article {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid black;
+}
+
+article img {
+  height: 300px;
+  display: block;
+}
+
+.project-title-nav img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.project-title-nav {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
 main {
-  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+main section {
+  align-self: center;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  row-gap: 50px;
 }
